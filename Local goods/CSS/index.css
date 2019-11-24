@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Calistoga&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display: inline;=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e3ebf3;
+}
+
+div.meniu {
+  overflow: hidden;
+  background-color: #10ac84;
+}
+
+div.meniu ul {
+  display: inline;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+div.meniu li {
+  list-style-type: none;
+  padding: 0 4%;
+  transition: 0.3s ease;
+}
+
+div.meniu i {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+div.meniu i:hover {
+  transform: scale(1.2, 1.2);
+}
+
+div.intro {
+  width: 100%;
+  height: 100%;
+  background-image: url("../IMG/bg_opacitate.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.intro img {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+div.intro h2,
+div.intro span {
+  position: absolute;
+  z-index: 999;
+  bottom: 40%;
+  left: 5%;
+}
+
+div.intro h2 {
+  color: #222f3e;
+  font-family: "Calistoga", cursive;
+}
+
+div.intro span {
+  color: #3a4e66;
+  font-family: "Calistoga", cursive;
+}
+
+div.intro .inreg-btn {
+  position: absolute;
+  z-index: 999;
+  bottom: 30%;
+  left: 5%;
+  border: none;
+  outline: none;
+  padding: 1% 1%;
+  background: transparent;
+  border: 3px solid white;
+  font-family: "Calistoga", cursive;
+  color: #2c3c4e;
+  font-size: 2.2vh;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+div.intro .inreg-btn:hover {
+  background-color: white;
+  transform: scale(1.05, 1.05);
+}
+
+div.publicitate {
+    font-size: 35px; 
+    font-family: "Muli", sans-serif;
+    text-align: center;
+  width: 100%;
+}
+
+div.inf {
+    width: 90%;
+  height: 80%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+div.free img#free{
+    width: 50%;
+}
+
+div.delivery img#delivery{
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 31px;
+}
+
+div.friendly img#friendly{
+    width: 50%;
+    border-radius: 50%;
+}
+
+div.inf span {
+  display: block;
+  color: #2c3c4e;
+  width: 35%;
+  margin: auto;
+  word-wrap: break-word;
+  background: linear-gradient(120deg, #3498db,#10ac84);
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+div.free {
+  width: 33%;
+}
+
+div.delivery {
+  width: 33%;
+}
+
+div.friendly {
+  width: 33%;
+}
+
+div.copyright {
+  text-align: center;
+  width: 100%;
+  background: #000;
+  height: 7%;
+  align-items: center;
+  justify-content: center;
+}
+
+div.copyright span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.statistici {
+  display: inline;
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  height: 60%;
+}
+/*
+div.statistici .clienti-multumiti {
+  position: relative;
+  border-radius: 50%;
+  width: 22%;
+  height: 50%;
+  border: 20px solid #ff6b6b;
+  margin: 0 2%;
+}
+
+div.statistici .clienti-multumiti span.procent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vh;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.statistici .clienti-multumiti span.desc {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #8395a7;
+}
+
+div.statistici .produse-vandute {
+  position: relative;
+  border-radius: 50%;
+  width: 22%;
+  height: 50%;
+  border: 20px solid #0abde3;
+  margin: 0 2%;
+}
+
+div.statistici .produse-vandute span.procent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vh;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.statistici .produse-vandute span.desc {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #8395a7;
+}
+
+div.statistici .cumparatori-revin {
+  position: relative;
+  border-radius: 50%;
+  width: 22%;
+  height: 50%;
+  border: 20px solid #ff9f43;
+  margin: 0 2%;
+}
+
+div.statistici .cumparatori-revin span.procent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vh;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.statistici .cumparatori-revin span.desc {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #8395a7;
+}
+*/
+
+div.statistici .title-statistici
+{
+   position: absolute;
+   top: 10px;
+   font-size: 35px; 
+   font-family: "Muli", sans-serif;
+}
+div.statistici .inf-92
+{
+    position: absolute;
+    left:25%;
+    bottom: 12%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(120deg, #3498db,#10ac84);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}
+div.statistici .inf-94
+{
+    position: absolute;
+    left:64%;
+    bottom: 12%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(120deg, #3498db,#10ac84);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}
+div.statistici .inf-98
+{
+    position: absolute;
+    left:45%;
+    bottom: 12%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(120deg, #3498db,#10ac84);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}

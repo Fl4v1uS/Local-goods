@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,400i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e3ebf3;
+}
+
+div.meniu {
+  overflow: hidden;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+}
+
+div.meniu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.meniu li {
+  list-style-type: none;
+  padding: 0 4%;
+  transition: 0.3s ease;
+}
+
+div.meniu i {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+div.meniu i:hover {
+  transform: scale(1.2, 1.2);
+}
+
+div.titlu-produs {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+div.titlu-produs span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0%;
+  position: relative;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
+img {
+  max-width: 100px;
+  position: absolute;
+  top: 15%;
+  right: 35%;
+}
+.titlu-produs input[type="file"] {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  opacity: 0%;
+  height: 50%;
+}
+div.titlu-produs .browse {
+  position: relative;
+  font-size: 15px;
+  font-family: "Sawarabi Mincho", sans-serif;
+  cursor: pointer;
+}
+div.titlu-produs .browse a {
+  position: flex;
+  top: 20%;
+  cursor: pointer;
+  text-decoration-line: none;
+  color: black;
+}
+div.titlu-produs .browse:hover {
+  position: relative;
+  font-size: 15px;
+  font-family: "Sawarabi Mincho", sans-serif;
+  cursor: pointer;
+}
+div.titlu-produs .browse a:hover {
+  position: flex;
+  top: 20%;
+  cursor: pointer;
+}
+.titlu-produs input[type="file"]:hover {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22%;
+  background: red;
+  cursor: pointer;
+}
+.titlu-produs .nume {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18%;
+  width: 10%;
+  border: none;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 15px;
+  transition: 0.5s ease-out;
+}
+
+.titlu-produs .nume:focus {
+  transform: scale(1.2, 1.2);
+  border: 1px solid white;
+  background-position: right;
+  transition: 0.5s ease-out;
+}
+.titlu-produs .cantitate {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24%;
+  width: 10%;
+  border: none;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 15px;
+  transition: 0.5s ease-out;
+}
+
+.titlu-produs .cantitate:focus {
+  transform: scale(1.2, 1.2);
+  border: 1px solid white;
+  background-position: right;
+  transition: 0.5s ease-out;
+}
+.titlu-produs .pret {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  width: 10%;
+  border: none;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 15px;
+  transition: 0.5s ease-out;
+}
+
+.titlu-produs .pret:focus {
+  transform: scale(1.2, 1.2);
+  border: 1px solid white;
+  background-position: right;
+  transition: 0.5s ease-out;
+}
+.titlu-produs .descriere {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 36%;
+  width: 10%;
+  border: none;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 15px;
+  transition: 0.3s ease-out;
+}
+
+.titlu-produs .descriere:focus {
+  width: 50%;
+  height: 7%;
+  border: 1px solid white;
+  background-position: right;
+  transition: 0.3s ease-out;
+  text-align: left;
+}
+.titlu-produs .adauga {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 44%;
+  width: 20%;
+  border: none;
+  background: linear-gradient(120deg, #3498db, #10ac84);
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 15px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.titlu-produs .adauga:hover {
+  transform: scale(1.2, 1.2);
+  border: 1px solid white;
+  background-position: right;
+  transition: 0.5s ease-out;
+}

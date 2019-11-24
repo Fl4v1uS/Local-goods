@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Calistoga&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display: inline;=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display: inline;=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e3ebf3;
+}
+
+div.meniu {
+  overflow: hidden;
+  background-color: #10ac84;
+}
+
+div.meniu ul {
+  display: inline;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+div.meniu li {
+  list-style-type: none;
+  padding: 0 4%;
+  transition: 0.3s ease;
+}
+
+div.meniu i {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+div.meniu i:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/***************/
+div.produs{
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+}
+
+div.produs span{
+    color: grey;
+}
+
+div.produs img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding-top: 3%;
+}
+
+div.produs .descriere{
+    border-radius: 10px;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    right: 20%;
+    top: 14%;
+}
+
+/****************/
+div.butoane{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+div.produs .adauga {
+    font-size: 1.8vh;
+    width: 20%;
+    padding: 1% 0%;
+    background: transparent;
+    border: 3px solid white;
+    outline: none;
+    cursor: pointer;
+    font-family: "Muli", sans-serif;
+}
+
+  div.produs .adauga:hover {
+    background: black;
+    color: white;
+    transition: 0.5s ease;
+    border: none;
+  }
+
+  div.produs img
+  {
+      
+  }

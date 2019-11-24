@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,400i&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #3498db, #10ac84);
+}
+
+div.meniu {
+    overflow: hidden;
+    background: linear-gradient(120deg, #3498db, #10ac84);
+}
+
+div.meniu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.meniu li {
+    list-style-type: none;
+    padding: 0 4%;
+    transition: 0.3s ease;
+}
+
+div.meniu i {
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+div.meniu i:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.login-form {
+    top: 50%;
+    width: 360px;
+    background: #f1f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb {
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0, 5px;
+    height: 40px;
+}
+
+.txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.txtb span::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.focus+span::before {
+    top: -5px;
+}
+
+.focus+span::after {
+    width: 100%;
+}
+
+.logbtn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #10ac84, #2e86de);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.logbtn:hover {
+    background-position: right;
+}
+
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}

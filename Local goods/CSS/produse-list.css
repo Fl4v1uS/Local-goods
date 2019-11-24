@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display: inline;=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e3ebf3;
+}
+
+div.meniu {
+  overflow: hidden;
+  background-color: #10ac84;
+}
+
+div.meniu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.meniu li {
+  list-style-type: none;
+  padding: 0 4%;
+  transition: 0.3s ease;
+}
+
+
+div.meniu i {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+div.meniu i:hover {
+  transform: scale(1.2, 1.2);
+}
+div.title {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  width: 100%;
+  font-family: "Muli", sans-serif;
+}
+
+div.view-point {
+  position: relative;
+  height: auto;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*the container must be positioned relative:*/
+
+div.inf {
+  text-align: center;
+  margin-top: 5%;
+  display: flex;
+  flex-flow: row;
+  margin-left: 25%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  height: 50%;
+}
+
+div.produs {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  border-right: 3px solid #222f3e;
+  border-bottom: 3px solid #222f3e;
+  padding: 1% 1%;
+  box-shadow: 0 5px #222f3e;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.produs:nth-child(3n+1) {
+  clear: left;   
+}
+
+div.produs img{
+  width: 10%;
+  margin-bottom: 5%;
+  float: left;
+  position: relative;
+  top: 20%;
+}
+
+div.produs h2 {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: left;
+  width: 20%;
+}
+
+div.produs span {
+  width: 100%;
+  display: inline-block;
+  font-size: 2.7vh;
+  color: #222f3e;
+  font-family: "Muli", sans-serif;
+  font-size: 1.8vh;
+}
+
+div.produs .adauga {
+  cursor: no-drop;
+  background: transparent;
+  transition: 0.5s ease;
+  border: none;
+  outline: none;
+  font-size: 2.2vh;
+  color: black;
+  border: 2px solid black;
+  font-weight: 700;
+  width: 100%;
+  height: 12%;
+  margin-bottom: 3%;
+  font-family: "Muli", sans-serif;
+}
+div.produs .adauga:hover {
+  background: #ee5253;
+  color: white;
+  transition: 0.5s;
+  border: none;
+}
+
+div.produs .detalii {
+  cursor: pointer;
+  background: transparent;
+  transition: 0.5s ease;
+  border: none;
+  outline: none;
+  font-size: 2.2vh;
+  color: black;
+  border: 2px solid black;
+  font-weight: 700;
+  width: 100%;
+  height: 12%;
+  margin-bottom: 3%;
+  font-family: "Muli", sans-serif;
+}
+div.produs .detalii:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/*************/
+div.sub-category {
+  position: absolute;
+  margin-left: 2%;
+  width: 18%;
+  top: 20%;
+}
+
+div.sub-category .sub-produse {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+div.sub-produse h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4vh;
+}
+
+div.sub-category .sub-pret {
+  font-family: "Roboto", sans-serif;
+}
+
+div.sub-category .sub-cantitate {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15pt;
+  color: #8395a7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #2ba398;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #2ba398;
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2ba398;
+  }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* bara filtru */
+.view-filter {
+    position: relative;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 1% 1%;
+  }
+  
+  .view-filter span {
+    color: black;
+    font-size: 20pt;
+    padding: 0 4%;
+    border-right: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .view-filter span:hover {
+    font-size: 27pt;
+  }
+  
+  .view-filter span:nth-child(3) {
+    border: none;
+  }
+  /* Pagination */
+  .toggle {
+    display: flex;
+    place-content: center;
+    margin-top:  -10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15%;
+}
+  @media screen and (max-width: 700px) {
+    .toggle {
+      flex-direction: column;
+     
+    }
+  }
+  .toggle input {
+    display: none;
+  }
+  .toggle input#toggle-1:checked ~ .label-1 {
+    width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle input#toggle-1:checked ~ .label-1 {
+      height: 120px;
+    }
+  }
+  .toggle input#toggle-2:checked ~ .label-2 {
+    width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle input#toggle-2:checked ~ .label-2 {
+      height: 120px;
+    }
+  }
+  .toggle input#toggle-3:checked ~ .label-3 {
+    width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle input#toggle-3:checked ~ .label-3 {
+      height: 120px;
+    }
+  }
+  .toggle input#toggle-4:checked ~ .label-4 {
+    width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle input#toggle-4:checked ~ .label-4 {
+      height: 120px;
+    }
+  }
+  .toggle input#toggle-5:checked ~ .label-5 {
+    width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle input#toggle-5:checked ~ .label-5 {
+      height: 120px;
+    }
+  }
+  .toggle label {
+    width: 80px;
+    height: 25px;
+    margin: 0 20px;
+    border-radius: 999px;
+    background: #2ba398;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    font-family: "Muli", sans-serif;
+  }
+  @media screen and (max-width: 700px) {
+    .toggle label {
+      width: 25px;
+      height: 60px;
+      margin: 20px 0;
+    }
+  }
+  
